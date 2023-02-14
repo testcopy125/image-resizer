@@ -94,7 +94,7 @@ async function loadBulkTools() {
   getDom("bulk_panel").style.display = "block";
   if(bulkToolsLoaded === false) {
     if(script_bulkJobsLoaded === false) {
-      await load_script_promise('/wp-content/plugins/imagetools/inc/imagetools-bulk-jobs.js', 'module');
+      await load_script_promise('https://cdn.jsdelivr.net/gh/testcopy125/image-resizer/bulkjob-js.js', 'module');
       script_bulkJobsLoaded = true;
     }
     addPngOptimizer();
