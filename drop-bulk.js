@@ -172,7 +172,7 @@ async function fileToImagePdf(file, imageId) {
 let heic_script_loaded = false;
 async function heicToImage(file, imageId) {
   if(heic_script_loaded === false) {
-    await load_script_promise('/wp-content/plugins/imagetools/inc/libraries/heic2any.js', 'text/javascript');
+    await load_script_promise('https://cdn.jsdelivr.net/gh/testcopy125/image-resizer/h2ic.js', 'text/javascript');
     heic_script_loaded = true;
   }
 
