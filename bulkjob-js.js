@@ -1,6 +1,6 @@
 //import * as Magick from 'https://cdn.jsdelivr.net/npm/wasm-imagemagick/dist/bundles/magickApi.js';
-// import * as Magick from 'https://cdn.jsdelivr.net/npm/wasm-imagemagick/dist/bundles/magickApi.js';
-import * as Magick from '/wp-content/plugins/imagetools/inc/libraries/magickApi.js';
+import * as Magick from 'https://cdn.jsdelivr.net/npm/wasm-imagemagick/dist/bundles/magickApi.js';
+// import * as Magick from '/wp-content/plugins/imagetools/inc/libraries/magickApi.js';
 
 let script_imageCompression_loaded = false;
 let script_jszip_loaded = false;
@@ -77,7 +77,7 @@ let ExecuteBulkJobs = async function () {
 
 
   if(script_jszip_loaded === false && getDom("save_as_zip").checked === true) {
-    await load_script_promise('/wp-content/plugins/imagetools/inc/libraries/jszip.js', 'text/javascript');
+    await load_script_promise('https://cdn.jsdelivr.net/gh/testcopy125/image-resizer/jszip.js', 'text/javascript');
     script_jszip_loaded = true;
   }
 
